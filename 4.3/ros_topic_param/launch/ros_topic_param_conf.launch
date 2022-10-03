@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+    <rosparam command="load" file="$(find ros_topic_param)/conf/param_conf.yaml" />
+	<node pkg="ros_topic_param" name="ros_publisher_param" type="ros_publisher_param" output="screen">
+	</node>
+</launch>
